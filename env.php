@@ -3,13 +3,13 @@
 const DB_CONNECTION = 'mysql';
 const DB_HOST = '127.0.0.1';
 const DB_PORT = 3306;
-const DB_DATABASE = 'my_sns';
+const DB_DATABASE = 'php_sns';
 const DB_USERNAME = 'root';
 const DB_PASSWORD = '';
 
 // APP
-const APP_KEY = "my_sns";
-const SITE_TITLE = "My SNS";
+const APP_KEY = "php_sns";
+const SITE_TITLE = "PHP SNS";
 
 const BASE_DIR = __DIR__;
 const APP_DIR = __DIR__ . "/app/";
