@@ -19,7 +19,12 @@
                             <?= $tweet['message'] ?>
                         </div>
                         <div class="tweet-nav mb-3">
-                            <form action="like.php" method="post">
+                            <!-- TODO: いいね（Like）フォーム送信 -->
+                            <form>
+                                <!-- TODO: name設定 -->
+                                <input type="hidden" name="" value="<?= $user['id'] ?>">
+                                <input type="hidden" name="" value="<?= $tweet['id'] ?>">
+
                                 <?php if (in_array($tweet['id'], $user_likes)): ?>
                                 <button class="btn btn-sm"><img src="../images/svg/heart_active.svg"></button>
                                 <span class="like-count"><?= @$like_counts[$tweet['id']] ?></span>
@@ -27,8 +32,6 @@
                                 <button class="btn btn-sm"><img src="../images/svg/heart.svg"></button>
                                 <span class="like-count"><?= @$like_counts[$tweet['id']] ?></span>
                                 <?php endif ?>
-                                <input type="hidden" name="user_id" value="<?= $user['id'] ?>">
-                                <input type="hidden" name="tweet_id" value="<?= $tweet['id'] ?>">
                             </form>
                         </div>
                     </div>
