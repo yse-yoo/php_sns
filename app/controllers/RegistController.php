@@ -29,7 +29,7 @@ class RegistController extends Controller
 
         Session::add("errors", $user->errors);
         if ($user->errors) {
-            Route::redirect('regist/input.php');
+            Route::redirect('input.php');
         }
         $data = [
             'posts' => $posts,
