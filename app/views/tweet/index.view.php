@@ -18,9 +18,9 @@
                         <div class="tweet-text mt-2 mb-2">
                             <?= $tweet['message'] ?>
                         </div>
-                        <div class="tweet-nav mb-3">
-                            <?php include(VIEW_DIR . 'components/like_form.php'); ?>
-                        </div>
+
+                        <!-- いいねフォーム -->
+                        <?php include(VIEW_DIR . 'components/like_form.php'); ?>
                     </div>
 
                 </div>
