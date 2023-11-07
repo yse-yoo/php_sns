@@ -16,7 +16,7 @@
                             <span class="ms-1 text-secondary"><?= date('Y/m/d H:i', strtotime($tweet['created_at'])) ?></span>
                         </div>
                         <div class="tweet-text mt-2 mb-2">
-                            <?= $tweet['message'] ?>
+                            <?= nl2br($tweet['message']) ?>
                         </div>
 
                         <!-- いいねフォーム -->
